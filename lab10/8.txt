@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Student's Birth Year</title>
+</head>
+<body>
+ <script>
+ function getBirthYearFromID() {
+   const studentID = prompt("Enter the student's ID number:");
+   const birthYear = studentID.slice(0, 4);
+   if (isNaN(birthYear) || birthYear.length !== 4) {
+    alert("Invalid ID number format. Please enter a valid ID number.");
+   } else {
+    alert("The birth year is: " + birthYear);
+   }
+ }
+ getBirthYearFromID();
+ </script>
+</body>
+</html>

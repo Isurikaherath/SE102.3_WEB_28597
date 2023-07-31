@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Mathematical Operations</title>
+</head>
+<body>
+ <script>
+  function performAddition() {
+   const num1 = parseFloat(prompt("Enter the first number for addition:"));
+   const num2 = parseFloat(prompt("Enter the second number for addition:"));
+   const result = num1 + num2;
+   alert("The result of addition is: " + result);
+ }
+  function performSubtraction() {
+   const num1 = parseFloat(prompt("Enter the first number for subtraction:"));
+   const num2 = parseFloat(prompt("Enter the second number for subtraction:"));
+   const result = num1 - num2;
+   alert("The result of subtraction is: " + result);
+ }
+  function performMultiplication() {
+   const num1 = parseFloat(prompt("Enter the first number for multiplication:"));
+   const num2 = parseFloat(prompt("Enter the second number for multiplication:"));
+   const result = num1 * num2;
+   alert("The result of multiplication is: " + result);
+ }
+  function performDivision() {
+   const num1 = parseFloat(prompt("Enter the first number for division:"));
+   const num2 = parseFloat(prompt("Enter the second number for division:"));
+   if (num2 === 0) {
+     alert("Error: Division by zero is not allowed.");
+   } else {
+     const result = num1 / num2;
+     alert("The result of division is: " + result);
+   }
+ }
+ 
+  const operation = prompt("Choose an operation: /n1 – Addition/n2 – Subtraction/n3 
+– Multiplicatio/n4 - Division");
+ switch (operation) {
+  case "1":
+    performAddition();
+    break;
+  case "2":
+    performSubtraction();
+    break;
+  case "3":
+    performMultiplication();
+    break;
+  case "4":
+    performDivision();
+    break;
+    default:
+    alert("Invalid choice. Please choose a valid operation.");
+ }
+ </script>
+</body>
+</html>
+
