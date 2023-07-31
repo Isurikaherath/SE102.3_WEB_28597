@@ -1,0 +1,18 @@
+
+<body>
+ <ol type=”i”>
+  <li>Group A </li>
+    <ol type=”i”>
+      <li>Germany</li>
+      <li>France </li>
+      <li>Spain </li>
+  <li>Group B </li>
+      <li>Brazil </li>
+      <li>Argentina </li>
+      <li>Portugal </li>
+  <li>Group C </li>
+      <li>italy </li>
+      <li>Netheland </li>
+      <li>England </li>
+ </ol>
+</body>
