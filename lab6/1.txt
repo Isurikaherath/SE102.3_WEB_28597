@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>E-Commerce </title>
+       <link href=" style.ccs">
+ </head>
+<body>
+<div class="container-fluid">
+ <nav class="navbar navbar-expand-lg bg-light"> <a class="navbar-brand" 
+href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" 
+datatarget="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" 
+ariaexpanded="false" aria-label="Toggle navigation"> <span class="navbartogglericon"></span> </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+       <ul class="navbar-nav mr-auto">
+        <li class="nav-item active"> <a class="nav-link" href="index.html">Home 
+<span class="sr-only">(current)</span></a> </li>
+        <li class="nav-item"> <a class="nav-link" href="second.html"> 
+Electronics</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="third.html">foods 
+</a></li>
+        <li class="nav-item"> <a class="nav-link" href="#">Cloths</a></li>
+        <li class="nav-item"> <a class="nav-link" href="#">Where To 
+  </ul>
+ 
+ </div>
+ </nav>
+</div>
+<img src=”ecommerce.jpeg” alt=”commercepic” width=100% height=200px>
+<h2 style=”text-align:center; color:blue:”>Product list</h2><br>
+<h4>Electronics</h4><br>
+  <main class="grid-container">
+    <div class="grid-item"><img src="camera.jpg" alt="camera"></div>
+    <div class="grid-item"><img src="phone.jpg" alt="phone"></div>
+    <div class="grid-item"><img src="lap.jpg" alt="lap"></div>
+    <div class="grid-item"><img src=mouse.jpg" alt="mouse"></div>
+ </main><br>
+<h4>Foods</h4><br>
+ <main class="grid-container">
+   <div class="grid-item"><img src="pizza.jpg" alt="pizza”></div>
+   <div class="grid-item"><img src="sandwich.jpg" alt="sandwich"></div>
+   <div class="grid-item"><img src="burger.jpg" alt="burger"></div>
+   <div class="grid-item"><img src=”drinks.jpg" alt="drinks"></div>
+ </main><br>
+<h4>clothes</h4>
+<main class="grid-container">
+   <div class="grid-item"><img src="coat.jpg" alt="coat"></div>
+   <div class="grid-item"><img src="childclt.jpg" alt="childclothes”></div>
+   <div class="grid-item"><img src="womens.jpg" alt="frocks"></div>
+   <div class="grid-item"><img src=jacke.jpg" alt="jackets"></div>
+ </main>
+</body>
+</html>
+
+/* styles.css */
+body {
+ margin: 0;
+ padding: 0;
+ font-family: Arial, sans-serif;
+}
+.grid-container {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr); 
+   grid-gap: 10px; 
+   padding: 20px; 
+}
+.grid-item img {
+   width: 100%;
+   height: auto; 
+   display: block; 
+   border: 1px solid #ccc;
+}
+
