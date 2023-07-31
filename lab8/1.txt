@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Button Color Changer</title>
+ <style>
+ button {
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  border: none;
+  color: white;
+ }
+ #red-button {
+  background-color: red;
+ }
+ #green-button {
+  background-color: green;
+ }
+ #blue-button {
+  background-color: blue;
+ }
+ </style>
+</head>
+<body>
+ <!-- Buttons for changing colors -->
+ <button id="red-button” onmouseover="changeBackgroundColor('red')" 
+onmouseout="restoreBackgroundColor('red')">Red</button>
+ <button id="green-button" onmouseover="changeBackgroundColor('green')" 
+onmouseout="restoreBackgroundColor('green')">Green</button>
+ <button id="blue-button" onmouseover="changeBackgroundColor('blue')" 
+onmouseout="restoreBackgroundColor('blue')">Blue</button>
+ <script>
+ function changeBackgroundColor(color) {
+  document.body.style.backgroundColor = color;
+ }
+ function restoreBackgroundColor(color) {
+  const buttons = document.getElementsByTagName('button');
+  let isHovering = false;
+  for (let i = 0; i < buttons.length; i++) {
+   if (buttons[i].style.backgroundColor === color) {
+     isHovering = true;
+     break;
+   }
+ }
+if (!isHovering) {
+ document.body.style.backgroundColor = 'white';
+  }
+ }
+ </script>
+</body>
+</html>
+
