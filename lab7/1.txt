@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Popup Message Box Example</title>
+</head>
+<body>
+ <button id="popupButton">Click Me</button>
+ <script src="script.js"></script> 
+</body>
+</html>
+// script.js
+const popupButton = document.getElementById('popupButton');
+popupButton.addEventListener('click', () => {
+ alert('Hello! This is a popup message box.');
+});
